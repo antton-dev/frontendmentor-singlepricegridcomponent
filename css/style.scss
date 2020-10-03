@@ -1,0 +1,108 @@
+@import '_fonts-colors';
+
+body {
+    background-color: $lightGray;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .container {
+        width: 700px;
+        height: 500px;
+        max-width: 90%;
+        max-height: 100%;
+        border-radius: 10px;
+        box-shadow: 10px 10px 20px #dddddd;
+
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+
+        p {
+            line-height: 30px;
+        }
+
+        h1, h2, span.price {
+            font-weight: 700;
+        }
+
+        .intro { 
+            grid-area: 1 / 1 / 2 / 4;
+            background-color: #fff;
+            border-radius: 10px 10px 0px 0px;
+            padding: 10px 50px;
+
+            h1 {
+                color: $cyan;
+            }
+
+            h2 {
+                color: $brightYellow;
+            }
+
+            p {
+                color: $grayishBlue;
+            }
+        }
+        div.price { 
+            grid-area: 2 / 1 / 3 / 2;
+            background-color: $cyan;
+            border-radius: 0px 0px 0px 10px;
+            padding: 10px 50px;
+            color: #fff;
+
+            span.price {
+                font-size: 2.2em;
+                vertical-align: middle;
+                margin-right: 15px;
+                color: #fff;
+            }
+
+            p.price {
+                color: #ffffffa9;
+            }
+            
+            a {
+                background-color: $brightYellow;
+                color: #fff;
+                display: flex;
+                height: 50px;
+                align-items: center;
+                justify-content: center;
+                border-radius: 5px;
+                box-shadow: 5px 5px 20px #68686898;
+                text-decoration: none;
+                transition: .2s box-shadow ease;
+
+                &:active {
+                    box-shadow: none;
+                }
+            }
+        }
+        .whyUs { 
+            grid-area: 2 / 2 / 3 / 3;
+            background-color: #2cc2bf;
+            border-radius: 0px 0px 10px 0px;
+            padding: 10px 50px;
+            color: #fff;
+
+            p {
+                color: $grayishBlue;
+            }
+
+            ul {
+                list-style-type: none;
+                padding: 0;
+                line-height: 25px;
+            }
+        }
+    }
+
+    @import '_responsive-600';
+    
+}
+
+
