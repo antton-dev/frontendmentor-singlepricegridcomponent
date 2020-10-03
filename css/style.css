@@ -12,6 +12,10 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
@@ -138,7 +142,12 @@ body .container .whyUs ul {
   line-height: 25px;
 }
 
-@media screen and (max-width: 600px) {
+body footer {
+  position: fixed;
+  bottom: 10px;
+}
+
+@media screen and (max-width: 670px) {
   body .container {
     height: 90vh;
     margin-bottom: 50px;
@@ -171,6 +180,9 @@ body .container .whyUs ul {
     -ms-grid-column-span: 1;
     grid-area: 3 / 1 / 4 / 2;
     border-radius: 0px 0px 10px 10px;
+  }
+  body footer {
+    display: none;
   }
 }
 /*# sourceMappingURL=style.css.map */

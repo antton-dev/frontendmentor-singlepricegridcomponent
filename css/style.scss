@@ -6,6 +6,7 @@ body {
     padding: 0;
     height: 100vh;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
 
@@ -20,6 +21,7 @@ body {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         grid-template-rows: repeat(2, 1fr);
+
 
         p {
             line-height: 30px;
@@ -99,6 +101,11 @@ body {
                 line-height: 25px;
             }
         }
+    }
+
+    footer {
+        position: fixed;
+        bottom: 10px; 
     }
 
     @import '_responsive-600';

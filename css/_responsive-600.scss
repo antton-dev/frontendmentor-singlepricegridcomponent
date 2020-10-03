@@ -1,4 +1,4 @@
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 670px) {
     
 
     .container {
@@ -23,5 +23,10 @@
             grid-area: 3 / 1 / 4 / 2; 
             border-radius: 0px 0px 10px 10px;
         }
+    }
+
+    footer {
+      display: none;  
+        
     }
 }
